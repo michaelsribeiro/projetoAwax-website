@@ -1,0 +1,239 @@
+@import "../core/reset";
+@import "../abstract/breakpoint";
+@import "../abstract/variables";
+@import "../abstract/mixins";
+
+section {
+    width: 100%;
+    
+    &.light {        
+        background-color: $bg-color-secondary;
+    }
+
+    &.dark {
+        background-color: $bg-color-primary;
+
+        h1 {
+            color: $text-white;
+        }
+
+        p {
+            color: $text-white;
+        }
+    }
+
+    .container {
+        padding: 60px 0;
+        @include flexCenter(column, center, center);        
+    }
+
+    .content {
+        margin-top: 30px;
+        @include flexCenter(column, center, center);
+
+        @include breakpoint(medium-to-large) {             
+            margin-top: 50px;
+            @include flexCenter(row, center, center);
+        }
+
+        @include breakpoint(large-up) {             
+            margin-top: 50px;
+            @include flexCenter(row, center, center);
+        }
+    }
+}
+
+.about {     
+
+    .about-text {
+        flex: 1;
+        margin-bottom: 20px;
+        @include flexCenter(column, center, center);
+
+        @include breakpoint(medium-to-large) {            
+            margin-bottom: 0;                
+            margin-right: 40px;
+        }
+
+        @include breakpoint(large-up) {
+            margin-bottom: 0;                 
+            margin-right: 40px;
+        }
+
+        button {
+            margin: 20px 0 0;
+        }
+    }
+
+    // Resposively youtube video
+    .about-video {
+        flex: 1;
+        width: 100%;
+        max-width: 800px;
+        margin: 40px auto 0;
+
+        @include breakpoint(medium-to-large) {    
+            margin: auto;
+        }
+        
+        @include breakpoint(large-up) {    
+            margin: auto;
+        }
+    
+        .video-area {
+            position: relative;
+            height: 0px;
+            padding: 0px 0px 42.5%;
+
+            iframe {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 0px;
+                box-shadow: 3px 5px 10px rgba(43, 42, 42, .5);
+            }
+        }
+    }   
+}
+
+.services {
+    .services-box {
+        max-width: 300px;
+        padding: 20px 30px;
+        @include flexCenter(column, center, center);
+
+        @include breakpoint(medium-to-large) {    
+            padding: 20px 0;
+            margin: 0 10px;
+            justify-content: space-between;
+        }
+
+        @include breakpoint(large-up){
+            padding: 20px 0;
+            margin: 0 10px;
+        }
+
+        img {
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 10px;
+            color: $text-color-terciary;
+        }
+    }
+}
+
+.projects {
+
+    .content {
+        @include flexCenter(column, center, center);
+
+        @include breakpoint(large-up) {            
+            height: 70vh;
+        }
+    }
+
+    .projects-filter {
+        display: inline-block;
+        background-color: #eee;
+        border-radius: 30px;
+        border: 1px solid #ccc;
+        margin: 30px 0 10px;
+        padding: 0 15px;
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0;
+            padding: 12px 18px;
+            text-transform: uppercase;
+            font-size: 11px;
+            border-right: 1px solid #ccc;
+            border-bottom: 2px solid #eee;
+            color: #555;
+            cursor: pointer;
+            transition: all ease .3s;
+            
+            &.active {
+                border-bottom: 2px solid $text-color-secondary;
+            }
+
+            &:last-child{ 
+                border-right: none;
+            }
+
+            &:hover {
+                border-bottom: 2px solid $text-color-secondary;
+            }
+        }
+    }
+
+    .projects-thumb {
+        width: 100%;
+        max-width: 1140px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        .projects-photo {
+            width: 260px;
+
+            .projects-photoarea {
+                margin: 10px;
+                width: 240px;
+                height: 140px;
+                position: relative;
+                cursor: pointer;
+
+                .project-info {
+                    opacity: 0;
+                    position: absolute;
+                    width: inherit;
+                    height: inherit;
+                    padding: 0 20px;
+                    background-color: rgba(0, 0, 0, .8);
+                    transition: all ease .3s;
+                    z-index: z-index(dropdown);
+                    @include flexCenter(column, center, center);
+
+                    h4 {
+                        font-weight: 600;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        color: $text-white;
+                        font-size: 10px;
+                    }
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+
+                img {
+                    width: inherit;
+                    height: inherit;
+                }
+            }
+        }
+    }
+    
+    .btn-default {
+        margin-top: 30px;
+    }
+}

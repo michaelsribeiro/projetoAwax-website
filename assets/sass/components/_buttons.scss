@@ -1,0 +1,22 @@
+@import "../abstract/variables";
+
+.btn-default {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    color: $text-white;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;    
+    outline: none;
+    background-color: $text-color-secondary;
+    transition: all .3s ease;
+
+    @include breakpoint(large-up) {
+        font-size: 10px;
+    }
+
+    &:hover {
+        background-color: darken($text-color-secondary, 10%);
+    }
+}

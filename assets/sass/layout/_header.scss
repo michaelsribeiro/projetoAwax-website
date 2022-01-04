@@ -1,0 +1,160 @@
+@import "../core/reset";
+@import "../abstract/breakpoint";
+@import "../abstract/variables";
+@import "../abstract/mixins";
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: $bg-color-primary;
+    z-index: z-index(modal);
+    
+    .logo {
+        flex: 1;
+        height: 80px;
+        @include flexCenter(row, flex-start, center);
+
+        @include breakpoint(medium-to-large){
+            flex: 0;
+        }
+
+        @include breakpoint(large-up){
+            flex: 0;
+        }        
+
+        img {
+            width: 80px;
+            cursor: pointer;
+
+            @include breakpoint(medium-to-large){
+                width: 90px;
+            }
+
+            @include breakpoint(large-up){
+                width: 90px;
+            }
+        }
+    }        
+
+    .navigation {
+        flex: 2;
+        position: relative;
+        transition: all .3s ease;
+        @include flexCenter(row, flex-end, center);
+
+        @include breakpoint(medium-to-large){
+            flex: 3;
+        }
+
+        @include breakpoint(large-up){
+            flex: 3;
+        }
+
+        .toggle {
+            width: 30px;
+            display: flex;
+            cursor: pointer;
+            @include flexCenter(column, center, flex-end);
+            
+            @include breakpoint(medium-to-large){
+                display: none;
+            }
+
+            @include breakpoint(large-up){
+                display: none;
+            }
+    
+            .toggle-btn {
+                width: 30px;
+                border-bottom: 3px solid $text-color-secondary;
+            }
+        
+            .center {
+                margin: 8px 0;
+            }
+        }
+    
+        nav {
+            display: none;
+            height: calc(80vh - 80px);
+            width: calc(100% + 40px);
+            left: 0;
+            top: 80px;
+            position: absolute;
+            background-color: rgba(0,0,0,.9);
+            z-index: z-index(modal);
+
+            @include breakpoint(medium-to-large){
+                display: block;
+                height: initial;
+                position: static;
+                background-color: transparent;
+                z-index: z-index(default); 
+            }
+
+            @include breakpoint(large-up){
+                display: block;
+                height: initial;
+                position: static;
+                background-color: transparent;
+                z-index: z-index(default); 
+            }
+    
+            ul {
+                list-style: none;
+                color: #fff;
+                margin-top: 20px;
+
+                @include breakpoint(medium-to-large){
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    @include flexCenter(center, flex-end);
+                }
+
+                @include breakpoint(large-up){ 
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    @include flexCenter(center, flex-end);
+                }
+            }
+    
+            li {
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                font-size: 15px;
+                font-weight: 600;
+                position: relative;
+
+                @include breakpoint(medium-to-large){
+                    margin: 0;
+                    padding: 0 5px;
+                    display: inline-block;
+                    font-size: 12px;                    
+                }
+                
+                @include breakpoint(large-up){                    
+                    margin: 0;
+                    padding: 0 10px;
+                    display: inline-block;
+                    font-size: 12px;
+                }
+
+                a {
+                    transition: .3s linear;
+                    padding-bottom: 30px;
+                    border-bottom: 2px solid #000;
+                    
+                    &:hover {
+                        color: $text-color-secondary;
+                        border-bottom: 2px solid $text-color-secondary;
+                    }
+                }
+            }        
+        } 
+    }       
+}
+
+
+

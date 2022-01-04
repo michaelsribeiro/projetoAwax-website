@@ -1,0 +1,109 @@
+@import "../core/reset";
+@import "../abstract/breakpoint";
+@import "../abstract/variables";
+@import "../abstract/mixins";
+
+.carousel { 
+    flex: 1; 
+    overflow: hidden;
+    height: calc(80vh - 80px);
+    
+    @include breakpoint(large-up) {  
+        height: calc(100vh - 80px);
+    }
+
+    .carousel-dots {
+        position: absolute;
+        width: 100vw;
+        @include flexCenter(row, space-between, center);
+
+        .dots {
+            display: none;
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+        }
+    }
+
+    .carousel-inner {
+        height: 100%;
+        display: flex;
+        transition: all ease .8s;
+
+        .carousel-item {
+            width: 100vw;
+            height: inherit;
+            @include flexCenter(column, center, center);
+
+            .mask {
+                position: absolute;
+                width: 100vw;
+                height: calc(80vh - 80px);
+                background-color: rgba(0,0,0,.7);
+
+                @include breakpoint(medium-to-large) {  
+                    height: calc(80vh - 80px);
+                }
+
+                @include breakpoint(large-up) {  
+                    height: calc(100vh - 80px);
+                }
+            }
+
+            &.first {
+                background-image: url('../images/complementos/bg-02.png');
+                background-size: cover;
+                background-position: center;
+            }
+
+            &.second {
+                background-image: url('../images/complementos/bg-01.jpg');
+                background-size: cover;
+                background-position: bottom;
+            }
+            
+            .carousel-area {                
+                @include flexCenter(column, center, center);
+
+                h1 {
+                    text-align: center;
+                    font-weight: 800;
+                    font-size: 30px;
+                    color: $text-white;
+                    z-index: z-index(overlay);
+
+                    @include breakpoint(medium-to-large) {   
+                        font-size: 50px;
+                    }
+
+                    @include breakpoint(large-up) {   
+                        font-size: 50px;
+                    }
+
+                    span {
+                        color: $text-color-secondary;
+                    }
+                }
+
+                h2 {
+                    z-index: z-index(overlay);
+                    @include breakpoint(medium-to-large) {   
+                        font-size: 22px;
+                    }
+                    
+                    @include breakpoint(large-up) {   
+                        font-size: 22px;
+                    }
+                }
+
+                button {
+                    margin-top: 20px;
+                    z-index: z-index(overlay);
+                }
+            }
+        }
+    }
+}
