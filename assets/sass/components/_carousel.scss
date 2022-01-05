@@ -113,10 +113,15 @@
     @include flexCenter(row, center, center);
 
     .item {
-        @include breakpoint(medium-to-large) {
-        margin-right: 30px;
-    }
         @include flexCenter(row, center, center);
+        
+        @include breakpoint(medium-to-large) {
+            margin-right: 30px;
+        }
+
+        @include breakpoint(large-up) {
+            margin-right: 30px;
+        }
 
         .card { 
             width: 300px;
