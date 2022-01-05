@@ -67,10 +67,7 @@ $(document).ready(function(){
             },
             900:{
                 items: 3,
-            },
-            1200:{
-                items: 4,
-            },
+            }
         }
     });
   });
