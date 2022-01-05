@@ -49,3 +49,28 @@ $(document).ready(function() {
         $(this).addClass('active').siblings().removeClass('active');
     })
 });
+
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        responsiveClass: true,
+        responsive:{
+            0:{
+                items: 1,
+            },
+            600:{
+                items: 2
+            },
+            900:{
+                items: 3,
+            },
+            1200:{
+                items: 4,
+            },
+        }
+    });
+  });

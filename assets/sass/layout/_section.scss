@@ -8,6 +8,14 @@ section {
     
     &.light {        
         background-color: $bg-color-secondary;
+
+        h1 {
+            color: $text-color-primary;
+        }
+
+        p {
+            color: $text-color-primary;
+        }
     }
 
     &.dark {
@@ -235,5 +243,16 @@ section {
     
     .btn-default {
         margin-top: 30px;
+    }
+}
+    
+.team {
+    background-image: url('../images/complementos/bg-03.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+    h1 {
+        color: $text-white;
     }
 }
