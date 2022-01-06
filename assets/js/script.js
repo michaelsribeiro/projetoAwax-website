@@ -34,7 +34,7 @@ function updateMargin() {
 
 setInterval(goNext, 10000);
 
-// Gallery Filter (jQuery)
+// Gallery Filter
 $(document).ready(function() {
     $('.filter-list').click(function() {
         const value = $(this).attr('data-filter');
@@ -51,7 +51,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
+    $(".owl-one").owlCarousel({
         items: 1,
         loop: true,
         nav: false,
@@ -74,3 +74,14 @@ $(document).ready(function(){
         }
     });
   });
+
+$(document).ready(function(){
+$(".owl-two").owlCarousel({
+    items: 1,
+    loop: true,
+    nav: false,
+    dots: true,
+    autoplay: true,
+   
+});
+});

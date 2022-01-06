@@ -249,10 +249,196 @@ section {
 .team {
     background-image: url('../images/complementos/bg-03.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     width: 100%;
 
     h1 {
         color: $text-white;
+    }
+}
+
+.clients {
+    h1 {
+        text-transform: none;
+        font-size: 23px;
+        font-weight: 600;
+    }
+
+    h2 {
+        text-transform: none;
+        font-size: 18px;
+        text-align: center;
+        color: $text-color-primary;
+    }
+
+    p {
+        line-height: 2;
+        color: #5d5d5d !important;
+        font-size: 13px;
+    }
+}
+
+.awards {
+    width: 100%;
+
+    .container {
+        padding: 30px 0;
+
+        .content {
+            width: 100%;
+            margin: 0;
+            @include flexCenter(row, space-around, center);
+
+            @include breakpoint(zero-to-small) { 
+                @include flexCenter(row, center, center);
+
+                #image1 {
+                    margin-right: 50px;
+                }
+                #image2 {
+                    display: none;
+                }          
+                #image3 {
+                    display: none;
+                }
+                #image4 {
+                    display: none;
+                }
+                #image5 {
+                    display: none;
+                } 
+            }
+
+            @include breakpoint(small-to-medium) {            
+                #image3 {
+                    display: none;
+                }
+                #image4 {
+                    display: none;
+                }
+                #image5 {
+                    display: none;
+                }                
+            }
+
+            img {
+                width: 75px;
+            }
+        }
+    }
+}
+
+.price {
+    width: 100%;
+
+    .content {
+        width: 100%;
+        @include flexCenter(column, center, center);
+
+        @include breakpoint(medium-to-large) { 
+            @include flexCenter(row, space-around, center);
+        }
+
+        @include breakpoint(large-up) { 
+            @include flexCenter(row, space-around, center);
+        }
+
+        .card {
+            width: 300px;
+            height: 450px;
+            margin: 40px 0;
+            background-color: #fff;
+            transition: all .3s linear;
+            border-radius: 10px;
+            text-align: center;
+            @include flexCenter(column, flex-start, center);
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 0 5px 10px rgba(43, 42, 42, .1);
+            }
+
+            @include breakpoint(medium-to-large) { 
+                width: 280px;
+                height: 350px;
+            }
+
+            @include breakpoint(large-up) { 
+                width: 280px;
+                height: 350px;
+            }
+
+            p {
+                margin-top: 10px;
+                color: #7d7d7d;
+
+                @include breakpoint(medium-to-large) { 
+                    margin-top: 5px;
+                }
+
+                @include breakpoint(large-up) { 
+                    margin-top: 5px;
+                }
+            }
+
+            .card-title {
+                font-size: 18px;
+                margin-top: 30px;
+            }
+
+            .price {
+                color: #c9c7c7;
+                margin: 30px 0;
+                text-align: center;
+                font-size: 25px;
+
+                @include breakpoint(medium-to-large) { 
+                    margin: 10px 0;
+                    font-size: 20px;
+                }
+
+                @include breakpoint(large-up) { 
+                    margin: 10px 0;
+                    font-size: 20px;
+                }
+
+                & span {
+                    color: #000;
+                    font-size: 45px;
+                    font-weight: bold;
+
+                    @include breakpoint(medium-to-large) { 
+                        font-size: 40px;
+                    }
+
+                    @include breakpoint(large-up) { 
+                        font-size: 40px;
+                    }
+                }
+            }
+
+            .list-item {
+                @include breakpoint(medium-to-large) { 
+                    font-size: 13px;
+                }
+
+                i {
+                    color: #41ca90;
+                }
+            }
+
+            button {
+                margin-top: 30px;
+
+                @include breakpoint(medium-to-large) { 
+                    margin-top: 20px;
+                }
+
+                @include breakpoint(large-up) { 
+                    margin-top: 20px;
+                }
+            }
+        }
     }
 }

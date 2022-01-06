@@ -108,7 +108,7 @@
     }
 }
 
-.owl-carousel {
+.owl-one {
     margin-top: 20px;
     @include flexCenter(row, center, center);
 
@@ -188,6 +188,146 @@
                     @include breakpoint(large-up) {
                         font-size: 10px;
                     }
+                }
+            }
+
+            .card-links {
+                width: 100%;
+                padding: 30px 0;
+                @include flexCenter(row, center, center);
+
+                @include breakpoint(medium-to-large) {
+                    padding: 20px 0;
+                }
+
+                @include breakpoint(large-up) {
+                    padding: 20px 0;
+                }
+
+                .fab {
+                    padding: 8px 10px;
+                    font-size: 20px;
+                    border-radius: 50%;
+                    background-color: $text-color-secondary;
+                    color: $text-white;
+                    transition: all ease .3s;
+                    cursor: pointer;
+
+                    @include breakpoint(medium-to-large) {
+                        padding: 5px 7px;
+                        font-size: 15px;
+                    }
+
+                    @include breakpoint(large-up) {
+                        padding: 5px 7px;
+                        font-size: 15px;
+                    }
+
+                    &:nth-child(2) {
+                        margin: 0 20px;
+
+                        @include breakpoint(medium-to-large) {
+                            margin: 0 10px;
+                        }
+
+                        @include breakpoint(large-up) {
+                            margin: 0 10px;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: darken($text-color-secondary, 10);
+                    }
+                }                
+            }
+        }
+    }
+}
+
+.owl-two {
+    margin-top: 20px;
+    @include flexCenter(row, center, center);
+
+    .item {
+        @include flexCenter(row, center, center);
+
+        .card { 
+            width: 100%;
+            margin: 10px 0 20px 0;
+            transition: .3s linear;
+            border-radius: 10px;
+            @include flexCenter(column, center, center);            
+
+            @include breakpoint(medium-to-large) {
+                width: 600px;
+                margin: 20px 0;
+            }
+
+            @include breakpoint(large-up) {
+                width: 600px !important;
+                margin: 20px 0;
+            }
+
+            .card-image {
+                max-width: 250px;        
+                width: 35%;
+                margin: 20px 0;
+
+                @include breakpoint(medium-to-large) {
+                    width: 20%;
+                    margin: 20px 0;
+                }
+
+                @include breakpoint(large-up) {
+                    width: 20%;
+                    margin: 20px 0;
+                }
+    
+            }
+
+            .card-info {
+                @include flexCenter(column, center, center);
+
+                h1 {
+                    text-transform: none;
+                    font-size: 23px;
+                    font-weight: 600;
+                    color: $text-color-primary;
+                    margin-bottom: 10px;
+
+                    @include breakpoint(medium-to-large) {
+                        font-size: 23px;
+                    }
+
+                    @include breakpoint(large-up) {
+                        font-size: 18px;
+                    }        
+                }
+
+                h2 {                    
+                    text-transform: none;
+                    font-size: 18px;
+                    text-align: center;
+                    color: $text-color-primary;
+                }
+
+                p {
+                    text-align: center;
+                    
+                    @include breakpoint(medium-to-large) {
+                        font-size: 12px;
+                    }
+
+                    @include breakpoint(large-up) {
+                        font-size: 12px;
+                    }
+                }
+
+                i {
+                    font-size: 25px;
+                    margin: 30px 0 5px;
+                    color: #7d7d7d;
+                    opacity: .5;
                 }
             }
 

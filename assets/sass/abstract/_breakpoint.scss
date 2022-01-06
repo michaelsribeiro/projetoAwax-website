@@ -1,7 +1,13 @@
 // @see https://desenvolvimentoparaweb.com/css/css-breakpoints-maneira-correta/
 
 @mixin breakpoint($point) {
-  @if $point == small-to-medium {
+  @if $point == zero-to-small {
+    @media (max-width: 37.4em){ // 600 to 899
+      @content;
+    }
+  }
+
+  @else if $point == small-to-medium {
     @media (min-width: 37.5em) and (max-width: 56.1875em){ // 600 to 899
       @content;
     }
