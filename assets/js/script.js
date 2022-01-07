@@ -48,6 +48,7 @@ $(document).ready(function() {
     $('.filter-list').click(function() {
         $(this).addClass('active').siblings().removeClass('active');
     })
+
 });
 
 $(document).ready(function(){
@@ -73,15 +74,21 @@ $(document).ready(function(){
             }
         }
     });
-  });
+});
 
 $(document).ready(function(){
-$(".owl-two").owlCarousel({
-    items: 1,
-    loop: true,
-    nav: false,
-    dots: true,
-    autoplay: true,
-   
+    $(".owl-two").owlCarousel({
+        items: 1,
+        loop: true,
+        nav: false,
+        dots: true,
+        autoplay: true,   
+    });
 });
+
+$(document).ready(function() {
+    $(".counter").counterUp({
+        delay: 10,
+        time: 1200
+    });
 });

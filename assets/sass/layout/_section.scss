@@ -257,27 +257,6 @@ section {
     }
 }
 
-.clients {
-    h1 {
-        text-transform: none;
-        font-size: 23px;
-        font-weight: 600;
-    }
-
-    h2 {
-        text-transform: none;
-        font-size: 18px;
-        text-align: center;
-        color: $text-color-primary;
-    }
-
-    p {
-        line-height: 2;
-        color: #5d5d5d !important;
-        font-size: 13px;
-    }
-}
-
 .awards {
     width: 100%;
 
@@ -346,7 +325,7 @@ section {
         .card {
             width: 300px;
             height: 450px;
-            margin: 40px 0;
+            margin: 20px 0;
             background-color: #fff;
             transition: all .3s linear;
             border-radius: 10px;
@@ -388,7 +367,7 @@ section {
             }
 
             .price {
-                color: #c9c7c7;
+                color: #7d7d7d;
                 margin: 30px 0;
                 text-align: center;
                 font-size: 25px;
@@ -437,6 +416,259 @@ section {
 
                 @include breakpoint(large-up) { 
                     margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+.packages {
+    width: 100%;
+
+    .container {
+        padding-bottom: 30px;
+
+        .content {
+            width: 100%;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #ccc;
+            @include flexCenter(column, center, center);
+
+            @include breakpoint(small-to-medium) { 
+                @include flexCenter(row, center, center);
+            }
+
+            @include breakpoint(medium-to-large) {
+                width: 90%; 
+                @include flexCenter(row, center, center);
+            }
+
+            @include breakpoint(large-up) { 
+                width: 80%;
+                @include flexCenter(row, center, center);
+            }
+    
+            .package-photo {
+                width: 100%;
+                margin: 20px 0 50px;
+                @include flexCenter(row, center, center);
+
+                @include breakpoint(small-to-medium) { 
+                    margin-right: 30px;
+                }
+
+                @include breakpoint(medium-to-large) {                    
+                    max-width: 400px;
+                    width: 100%;
+                    margin-right: 30px;
+                }
+
+                @include breakpoint(large-up) {                    
+                    max-width: 400px;
+                    width: 100%;
+                    margin-right: 30px;
+                }
+    
+                img {
+                    width: 80%;
+
+                    @include breakpoint(small-to-medium) { 
+                        width: 100%;
+                    }    
+    
+                    @include breakpoint(medium-to-large) {                    
+                        width: 100%;
+                    }
+    
+                    @include breakpoint(large-up) {                    
+                        width: 100%;
+                    }
+                }
+            }
+    
+            .package-info {
+                .feature {
+    
+                    &:nth-child(2) {
+                        margin: 30px 0;
+                    }
+    
+                    h1 {
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+    
+                    p {
+                        margin-left: 40px;
+                        color: #7d7d7d;
+                    }
+
+                    .far {
+                        color: $text-color-secondary;
+                    }
+                }
+            }
+        }
+    
+        button {
+            margin-top: 30px;
+        }
+    }   
+}
+
+.facts {
+
+    .content {
+        width: 100% !important;
+
+        .facts-box {
+            max-width: 300px;
+            width: 100%;
+            padding: 20px 30px;
+            text-align: center;
+            @include flexCenter(column, center, center);
+    
+            @include breakpoint(medium-to-large) {    
+                padding: 20px 0;
+                margin: 0 10px;
+                justify-content: space-around;
+            }
+    
+            @include breakpoint(large-up){
+                padding: 20px 0;
+                margin: 0 10px;
+                justify-content: space-around;
+            }
+    
+            .counter {
+                color: $text-color-secondary;
+                font-weight: 700;
+                font-size: 40px;
+                margin-bottom: 20px;
+                padding: 10px 0;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 25px;
+                    height: 3px;
+                    left: 50%;
+                    transform: translate(-50%);
+                    bottom: 0;
+                    background: #7d7d7d;
+                    border-radius: 5px;
+                }
+            }
+    
+            img {
+                margin-bottom: 20px;
+            }
+    
+            h4 {
+                font-weight: 600;
+            }
+    
+            p {
+                text-align: center;
+                margin-top: 10px;
+                color: $text-color-terciary;
+            }
+        }
+    }    
+}
+
+.social {
+    width: 100%;
+
+    .container {
+        padding: 0;
+
+        .content {
+            width: 100%;
+            margin: 0;
+            padding: 20px 0;
+            @include flexCenter(column, center, center);
+
+            @include breakpoint(medium-to-large) {    
+                @include flexCenter(row, center, center);
+            }
+
+            @include breakpoint(large-up) {    
+                @include flexCenter(row, center, center);
+            }
+
+            .social-text {
+                width: 100%;
+                @include flexCenter(row, center, center);
+
+                i {
+                    color: $text-color-terciary;
+                    font-size: 20px;
+                    margin-bottom: 20px;
+
+                    @include breakpoint(medium-to-large) {    
+                        margin: 0;
+                        font-size: 25px;
+                    }
+        
+                    @include breakpoint(large-up) {    
+                        margin: 0;
+                    }
+                }
+
+                h4 {
+                    color: $text-color-terciary;
+                    padding-left: 10px;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+
+                    @include breakpoint(medium-to-large) {    
+                        margin: 0;
+                    }
+        
+                    @include breakpoint(large-up) {    
+                        margin: 0;
+                    }
+                }
+            }
+
+            .social-icons {
+                width: 100%;
+                @include flexCenter(row, center, center);
+
+                .fab {
+                    font-size: 20px;
+                    padding: 8px;
+                    margin: 0 20px;
+                    border-radius: 50%;
+                    color: $text-white;
+                    cursor: pointer;
+
+                    animation-name: infiniteupdown;
+                    animation-duration: 3s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease;
+                    transition: all .3s;
+
+
+                    &.fa-twitter {
+                        background: #33c5ef;
+                    }
+
+                    &.fa-linkedin-in {
+                        background: #127cb5;
+                        padding: 8px 9px;
+                    }
+
+                    &.fa-facebook-f {
+                        background: #336296;
+                        padding: 8px 12px;
+                    }
+                }
+
+                span {
+                    display: none;
                 }
             }
         }
