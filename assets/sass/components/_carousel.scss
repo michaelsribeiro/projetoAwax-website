@@ -6,10 +6,12 @@
 .carousel { 
     flex: 1; 
     overflow: hidden;
-    height: calc(80vh - 80px);
+    top: 80px;
+    height: calc(100vh - 80px);
+    z-index: 1;
     
     @include breakpoint(large-up) {  
-        height: calc(100vh - 80px);
+        height: 100vh;
     }
 
     .carousel-dots {
@@ -41,15 +43,15 @@
             .mask {
                 position: absolute;
                 width: 100vw;
-                height: calc(80vh - 80px);
+                height: 90vh;
                 background-color: rgba(0,0,0,.7);
 
                 @include breakpoint(medium-to-large) {  
-                    height: calc(80vh - 80px);
+                    height: 90vh;
                 }
 
                 @include breakpoint(large-up) {  
-                    height: calc(100vh - 80px);
+                    height: 100vh;
                 }
             }
 
@@ -65,7 +67,8 @@
                 background-position: bottom;
             }
             
-            .carousel-area {                
+            .carousel-area {
+                margin-top: 40px;                
                 @include flexCenter(column, center, center);
 
                 h1 {

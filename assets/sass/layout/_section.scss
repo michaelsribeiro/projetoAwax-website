@@ -674,3 +674,119 @@ section {
         }
     }
 }
+
+.contact {
+    .container {
+
+        h3 {
+            text-align: center;
+        }
+        .content {
+            width: 100%;
+            @include flexCenter(column, center, center);
+
+            @include breakpoint(small-to-medium) {    
+                width: 500px;
+            }
+
+            @include breakpoint(medium-to-large) {    
+                width: 500px;
+            }
+
+            @include breakpoint(large-up) {    
+                width: 500px;
+            }
+
+            form {
+                width: 100%;
+
+                .row {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    @include flexCenter(column, flex-start, center);
+
+                    @include breakpoint(small-to-medium) {    
+                        @include flexCenter(row, flex-start, center);
+                    }
+
+                    @include breakpoint(medium-to-large) {    
+                        @include flexCenter(row, flex-start, center);
+                    }
+
+                    @include breakpoint(large-up) {    
+                        @include flexCenter(row, flex-start, center);
+                    }
+
+                    input {
+                        margin-bottom: 20px;
+                        padding: 10px 0;
+                        background: transparent;
+                        border: none;
+                        border-bottom: 2px solid #b2b2b2;
+                        outline: none;
+
+                        &::placeholder {
+                            font-size: 11px;
+                            color: #b2b2b2;
+                        }
+                    }
+
+                    #name {
+                        flex: 1;
+                        width: 100%;
+
+                        @include breakpoint(small-to-medium) {    
+                            margin-right: 20px;
+                        }
+
+                        @include breakpoint(medium-to-large) {    
+                            margin-right: 20px;
+                        }
+
+                        @include breakpoint(large-up) {    
+                            margin-right: 20px;
+                        }
+                    }
+
+                    #email {
+                        flex: 1;
+                        width: 100%;
+                    }
+
+                    #subject {
+                        flex: 1;
+                        width: 100%;
+                    }
+
+                    textarea {
+                        flex: 1;
+                        width: 100%;
+                        margin-bottom: 20px;
+                        padding: 10px 0;
+                        background: transparent;
+                        border: none;
+                        border-bottom: 2px solid #b2b2b2;
+                        outline: none;
+                        position: relative;
+                        resize: none;
+
+                        &::placeholder {
+                            font-family: 'Montserrat';
+                            font-size: 11px;
+                            font-weight: 600;
+                            color: #b2b2b2;
+                            position: absolute;
+                            bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.map {
+    background: url('../images/map.png');
+    background-size: cover;
+    background-position: center;
+}

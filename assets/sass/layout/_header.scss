@@ -8,6 +8,7 @@ header {
     height: 80px;
     background-color: $bg-color-primary;
     z-index: z-index(modal);
+    position: fixed;
     
     .logo {
         flex: 1;
@@ -67,6 +68,7 @@ header {
             .toggle-btn {
                 width: 30px;
                 border-bottom: 3px solid $text-color-secondary;
+                border-radius: 10px;
             }
         
             .center {
@@ -76,7 +78,7 @@ header {
     
         nav {
             display: none;
-            height: calc(80vh - 80px);
+            height: calc(100vh - 80px);
             width: calc(100% + 40px);
             left: 0;
             top: 80px;
@@ -146,9 +148,30 @@ header {
                     padding-bottom: 30px;
                     border-bottom: 2px solid #000;
                     
+                    @include breakpoint(zero-to-small){
+                        border: none;                 
+                    }
+
+                    @include breakpoint(small-to-medium){
+                        border: none;                 
+                    }
+
+                    &.active {
+                        color: $text-color-secondary;
+                        border-bottom: 2px solid $text-color-secondary;
+                    }
+                    
                     &:hover {
                         color: $text-color-secondary;
                         border-bottom: 2px solid $text-color-secondary;
+
+                        @include breakpoint(zero-to-small){
+                            border: none;                 
+                        }
+
+                        @include breakpoint(small-to-medium){
+                            border: none;                 
+                        }
                     }
                 }
             }        

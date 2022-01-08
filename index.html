@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="assets/owlcarousel/dist/assets/owl.theme.default.min.css">
 </head>
 <body>
-    <header id="#home">
+    <header>
         <div class="container">
             <div class="logo"><a href="#"><img src="./assets/images/logo1.png" alt="Awax Publicidade"></a></div>
             <div class="navigation">
@@ -29,21 +29,21 @@
                 </div>
                 <nav>
                     <ul>
-                        <li class="active"><a href="#home">Home</a></li>
-                        <li><a href="#about">About us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#team">Team</a></li>
-                        <li><a href="#clients">Clients</a></li>
-                        <li><a href="#price">Price</a></li>
-                        <li><a href="#facts">Some Facts</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#home" class="menu active">Home</a></li>
+                        <li><a href="#about" class="menu">About us</a></li>
+                        <li><a href="#services" class="menu">Services</a></li>
+                        <li><a href="#projects" class="menu">Projects</a></li>
+                        <li><a href="#team" class="menu">Team</a></li>
+                        <li><a href="#clients" class="menu">Clients</a></li>
+                        <li><a href="#price" class="menu">Price</a></li>
+                        <li><a href="#facts" class="menu">Some Facts</a></li>
+                        <li><a href="#contact" class="menu">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <main class="carousel">
+    <main  id="home" class="carousel">
         <div class="carousel-dots">
             <div class="dots" onclick="goPrev()">Previous</div>
             <div class="dots" onclick="goNext()">Next</div>
@@ -488,6 +488,36 @@
                     <i class="fab fa-twitter"></i><span>152</span>
                     <i class="fab fa-linkedin-in"></i><span>31</span>
                     <i class="fab fa-facebook-f"></i><span>1265</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact light">
+        <div class="container">
+            <h1>Contact us</h1>
+            <h3>Our agency located in melbourne, australia</h3>
+            <div class="content">
+                <form action="" method="post">
+                    <div class="row">
+                        <input type="text" name="name" id="name" placeholder="NAME" required>
+                        <input type="email" name="email" id="email" placeholder="EMAIL" required>
+                    </div>
+                    <div class="row">
+                        <input type="text" name="subject" id="subject" placeholder="SUBJECT" required>                        
+                    </div>
+                    <div class="row">
+                        <textarea name="textarea" cols="30" rows="5" placeholder="MESSAGE"></textarea>                    
+                    </div>
+                </form>
+                <button type="button" class="btn-default">Send Message</button>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <div class="container">
+            <div class="content">
+                <div class="card-adress">
+                    <img src="assets/images/icones/carta.png"><p>PO Box 16122 Collins Street West Victoria</p>
                 </div>
             </div>
         </div>

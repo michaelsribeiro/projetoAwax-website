@@ -9,6 +9,38 @@ window.onload = function(){
     });
 };
 
+
+let link = $('.menu');
+link.on('click', function() {
+    link.removeClass('active');
+    $(this).addClass('active');
+})
+
+const menuItems = document.querySelectorAll('nav a');
+
+menuItems.forEach(item => {
+    item.addEventListener('click', scrollOnClick);
+})
+
+function getScrollTopByHref(element) {
+    const id = element.getAttribute('href');
+    return document.querySelector(id).offsetTop;
+}
+
+function scrollOnClick(event) {
+    event.preventDefault();
+    const element = event.target;
+    const to = getScrollTopByHref(event.target) - 80;
+    scrollToPosition(to);
+}
+
+function scrollToPosition(to) {
+    window.scroll({
+        top: to,
+        behavior: "smooth",        
+    });
+}
+
 // Carousel
 let currentSlide =0;
 let totalSlides = document.querySelectorAll('.carousel-item').length;
