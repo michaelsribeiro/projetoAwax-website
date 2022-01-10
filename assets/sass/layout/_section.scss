@@ -637,7 +637,7 @@ section {
                 width: 100%;
                 @include flexCenter(row, center, center);
 
-                .fab {
+                i {
                     font-size: 20px;
                     padding: 8px;
                     margin: 0 20px;
@@ -726,6 +726,7 @@ section {
                         outline: none;
 
                         &::placeholder {
+                            font-weight: 600;
                             font-size: 11px;
                             color: #b2b2b2;
                         }
@@ -789,4 +790,83 @@ section {
     background: url('../images/map.png');
     background-size: cover;
     background-position: center;
+
+    .container {
+        padding: 50px 0;
+        @include flexCenter(row, center, center);
+        
+        @include breakpoint(small-to-medium) {  
+            @include flexCenter(row, flex-start, center);            
+        }
+
+        @include breakpoint(medium-to-large) {  
+            @include flexCenter(row, flex-start, center);            
+        }
+
+        @include breakpoint(large-up) {  
+            @include flexCenter(row, flex-start, center);            
+        }
+
+        .card-address {
+            width: 100%;
+            height: 340px;
+            background-color: #fff;
+            transition: all .3s linear;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(43, 42, 42, .3);
+            @include flexCenter(column, center, flex-start);
+
+            @include breakpoint(small-to-medium) {  
+                width: 500px;                
+            }
+
+            @include breakpoint(medium-to-large) { 
+                width: 500px;
+            }
+
+            @include breakpoint(large-up) { 
+                width: 500px;
+            }
+
+            .item {
+                height: 50px;
+                padding: 0 20px;
+                @include flexCenter(row, center, center);
+
+                i {
+                    padding: 8px;
+                    border-radius: 50%;
+                    font-size: 18px;
+                    background-color: #b4b3b3;
+                    color: $text-white;
+
+                    &.fa-map-marker-alt {
+                        padding: 8px 10px;
+                    }
+                }
+
+                p {
+                    color: #b4b3b3;
+                    margin-left: 15px;
+                    font-size: 11px;
+                    font-weight: 500;
+    
+                    @include breakpoint(medium-to-large) { 
+                        margin-top: 5px;
+                    }
+    
+                    @include breakpoint(large-up) { 
+                        margin-top: 5px;
+                    }
+                } 
+
+                a {
+                    color: #b4b3b3;
+                    font-size: 11px;
+                    font-weight: 500;
+                    margin-left: 15px;
+                }
+            }   
+        }
+    }
 }
