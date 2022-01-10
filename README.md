@@ -4,7 +4,7 @@
 
 ---
 
-<h1 align="center">"Formação Fullstack Developer B7 Web - Projeto Awax". 🥳</h1>
+<h2 align="center">"Formação Fullstack Developer B7 Web - Projeto Awax". 🥳</h1>
 
 ---
 
