@@ -25,10 +25,10 @@
 
 ---
 
-<h2 align="center">Previews 🖥️📱</h2>
+<h2 align="center">Preview 🖥️</h2>
 
    <p align="center">
-      <img src="assets/images/LAYOUT_DESKTOP.jpg" width="30%" alt="Awax Demo"/>
+      <img src="assets/images/LAYOUT_DESKTOP.jpg" width="20%" alt="Awax Demo"/>
    </p>
 
    > * Veja o projeto em funcionamento [`aqui`](https://project-agencymkt.netlify.app). 🧐
@@ -63,10 +63,11 @@
   $ git clone https://github.com/michaelsribeiro/projetoAwax-website.git
 
 - Entre no diretório:
-$ cd Awax
+  $ cd Awax
 
 - Open your browser in:
-http://localhost:5500/
+  http://localhost:5500/
+  
 ```
 
 ---
