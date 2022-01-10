@@ -4,7 +4,7 @@
 
 ---
 
-<h1 align="center">"Formação Fullstack Developer B7 Web - Projeto Awax". 🥳</h1>
+<h2 align="center">"Formação Fullstack Developer B7 Web - Projeto Awax". 🥳</h1>
 
 ---
 
@@ -25,14 +25,13 @@
 
 ---
 
-<h2 align="center">Previews 🖥️📱</h2>
+<h2 align="center">Preview 🖥️</h2>
 
    <p align="center">
-      <img src="assets/images/layout_desktop.jpg" width="90%" alt="Awax Demo"/>
-      <img src="assets/images/layout_mobile.jpg" width="90%" alt="Awax Demo"/>
+      <img src="assets/images/LAYOUT_DESKTOP.jpg" width="20%" alt="Awax Demo"/>
    </p>
 
-   > * Veja o projeto em funcionamento [`aqui`](https://project-agencymkt.netlify.app/s). 🧐
+   > * Veja o projeto em funcionamento [`aqui`](https://project-agencymkt.netlify.app). 🧐
 
 ---
 
@@ -64,10 +63,11 @@
   $ git clone https://github.com/michaelsribeiro/projetoAwax-website.git
 
 - Entre no diretório:
-$ cd Awax
+  $ cd Awax
 
 - Open your browser in:
-http://localhost:5500/
+  http://localhost:5500/
+  
 ```
 
 ---
