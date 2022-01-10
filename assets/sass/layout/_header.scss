@@ -158,7 +158,17 @@ header {
 
                     &.active {
                         color: $text-color-secondary;
-                        border-bottom: 2px solid $text-color-secondary;
+                        border: none;
+
+                        @include breakpoint(medium-to-large) { 
+                            color: $text-color-secondary;
+                            border-bottom: 2px solid $text-color-secondary;
+                        }
+
+                        @include breakpoint(large-up) { 
+                            color: $text-color-secondary;
+                            border-bottom: 2px solid $text-color-secondary;
+                        }
                     }
                     
                     &:hover {

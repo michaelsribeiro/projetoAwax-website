@@ -68,6 +68,10 @@ section {
             margin-right: 40px;
         }
 
+        p {
+            color: #7d7d7d;
+        }
+
         button {
             margin: 20px 0 0;
         }
@@ -591,10 +595,12 @@ section {
             @include flexCenter(column, center, center);
 
             @include breakpoint(medium-to-large) {    
+                max-width: 600px;   
                 @include flexCenter(row, center, center);
             }
 
-            @include breakpoint(large-up) {    
+            @include breakpoint(large-up) { 
+                max-width: 600px;   
                 @include flexCenter(row, center, center);
             }
 
@@ -700,6 +706,10 @@ section {
             form {
                 width: 100%;
 
+                input, select, textarea{
+                    color: #b2b2b2;
+                }
+
                 .row {
                     width: 100%;
                     margin-bottom: 10px;
@@ -724,11 +734,17 @@ section {
                         border: none;
                         border-bottom: 2px solid #b2b2b2;
                         outline: none;
+                        transition: all ease .3s;
 
                         &::placeholder {
-                            font-weight: 600;
+                            font-weight: 500;
                             font-size: 11px;
                             color: #b2b2b2;
+                        }
+
+                        &:focus {
+                            color: #b2b2b2;
+                            border-bottom: 2px solid #41ca90;
                         }
                     }
 
@@ -770,14 +786,20 @@ section {
                         outline: none;
                         position: relative;
                         resize: none;
+                        transition: all ease .3s;
 
                         &::placeholder {
                             font-family: 'Montserrat';
                             font-size: 11px;
-                            font-weight: 600;
+                            font-weight: 500;
                             color: #b2b2b2;
                             position: absolute;
                             bottom: 10px;
+                        }
+
+                        &:focus {
+                            color: #b2b2b2;
+                            border-bottom: 2px solid #41ca90;
                         }
                     }
                 }
