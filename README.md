@@ -28,8 +28,8 @@
 <h2 align="center">Previews 🖥️📱</h2>
 
    <p align="center">
-      <img src="assets/images/layout_desktop" width="90%" alt="Awax Demo"/>
-      <img src="assets/images/layout_mobile" width="90%" alt="Awax Demo"/>
+      <img src="assets/images/layout_desktop.jpg" width="90%" alt="Awax Demo"/>
+      <img src="assets/images/layout_mobile.jpg" width="90%" alt="Awax Demo"/>
    </p>
 
    > * Veja o projeto em funcionamento [`aqui`](https://project-agencymkt.netlify.app/s). 🧐
