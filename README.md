@@ -45,17 +45,6 @@
 
 ---
 
-<h2 align="center">Desafios e aprendizados ao longo do caminho 🤯</h2>
-
-   <p>
-      A semana Next Level Week, como muitos sabem, não é de brincadeira, ela requer prática, intensidade e principalmente, muito foco!<br> 
-      Felizmente, estou conseguindo ir bem na mesma, e quero fazer uma semana ainda melhor que a passada, pois afinal, como o mesmo nome diz, temos que sempre estar buscando um próximo nível e ser melhor a cada dia!<br>
-      Hoje, dia 16, foi o último dia de aula da Next Level Week, e essa experiência foi SENSACIONAL! A Rocketseat está de parabéns, e que ela continue sempre com essas grandes semanas, que me deram ainda mais foco, objetivo, conexões novas com pessoas, e eu só tenho a agradecer por esse trabalho sensacional!<br>
-      Foi uma experiência incrível, e que quero viver mais e mais vezes! 🚀
-   </p>
-
----
-
 <h2 align="center">Como usar 🤔</h2>
 
 ```
