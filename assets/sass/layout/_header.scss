@@ -24,15 +24,15 @@ header {
         }        
 
         img {
-            width: 80px;
+            width: 100px;
             cursor: pointer;
 
             @include breakpoint(medium-to-large){
-                width: 90px;
+                width: 100px;
             }
 
             @include breakpoint(large-up){
-                width: 90px;
+                width: 100px;
             }
         }
     }        
