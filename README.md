@@ -1,5 +1,5 @@
 <p align="center">
-      <img src="assets/images/logo.png" width="10%" alt="Awax Logo"/>
+      <img src="assets/images/logo.png" width="30%" alt="Awax Logo"/>
 </p>
 
 ---
@@ -12,7 +12,7 @@
    
    <p align="center">
       O projeto Awax, desenvolvido na Formação Fullstack Developer da <a href="https://b7web.com.br/fullstack/">B7 Web</a><br>
-      O projeto tem como inspiração uma o layoult de uma agência de publicidade. E tem como intenção praticar as habilidades repassadas durante o curso. 😀<br>
+      O projeto tem como inspiração uma o layoult de uma agência de publicidade e tem como intenção praticar as habilidades repassadas durante o curso. 😀<br>
    </p>
    
 - O que foi aprendido com este projeto:
@@ -20,8 +20,8 @@
 - ✅ "Mobile First" 💪
 - ✅ "Flexbox Layout" 👀
 - ✅ "Responsividade" 📌
-- ✅ "HTML e CSS semânticos" 🔥
-- ✅ "Listas, tabelas e formulários" 🚀
+- ✅ "Posicionamentos" 🔥
+- ✅ "Animações CSS" 🚀
 
 ---
 
@@ -66,8 +66,7 @@
   $ cd Awax
 
 - Open your browser in:
-  http://localhost:5500/
-  
+  http://localhost:5500/  
 ```
 
 ---
