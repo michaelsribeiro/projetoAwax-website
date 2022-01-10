@@ -80,7 +80,7 @@ $ git push origin my-feature
 <h2 align="center">Licença 📝</h2>
 
 <p align="center">
-   Este repositório está sob licença MIT. Você pode ver o arquivo <a href="https://github.com/felipecastrosales/Happy/blob/master/LICENSE"> LICENSE </a> para mais detalhes. 😉
+   Este repositório está sob licença MIT. Você pode ver o arquivo <a href="https://github.com/michaelsribeiro/projetoAwax-website/blob/main/LICENSE.md"> LICENSE </a> para mais detalhes. 😉
 </p>
 
 ---
