@@ -31,7 +31,7 @@
       <img src="assets/images/LAYOUT_DESKTOP.jpg" width="30%" alt="Awax Demo"/>
    </p>
 
-   > * Veja o projeto em funcionamento [`aqui`](https://project-agencymkt.netlify.app/s). 🧐
+   > * Veja o projeto em funcionamento [`aqui`](https://project-agencymkt.netlify.app). 🧐
 
 ---
 
