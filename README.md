@@ -1,5 +1,5 @@
 <p align="center">
-      <img src="assets/images/logo.png" width="10%" alt="Awax Logo"/>
+      <img src="assets/images/logo.png" width="30%" alt="Awax Logo"/>
 </p>
 
 ---
@@ -12,7 +12,7 @@
    
    <p align="center">
       O projeto Awax, desenvolvido na Formação Fullstack Developer da <a href="https://b7web.com.br/fullstack/">B7 Web</a><br>
-      O projeto tem como inspiração uma o layoult de uma agência de publicidade. E tem como intenção praticar as habilidades repassadas durante o curso. 😀<br>
+      O projeto tem como inspiração uma o layoult de uma agência de publicidade e tem como intenção praticar as habilidades repassadas durante o curso. 😀<br>
    </p>
    
 - O que foi aprendido com este projeto:
@@ -20,8 +20,8 @@
 - ✅ "Mobile First" 💪
 - ✅ "Flexbox Layout" 👀
 - ✅ "Responsividade" 📌
-- ✅ "HTML e CSS semânticos" 🔥
-- ✅ "Listas, tabelas e formulários" 🚀
+- ✅ "Posicionamentos" 🔥
+- ✅ "Animações CSS" 🚀
 
 ---
 
@@ -45,17 +45,6 @@
 
 ---
 
-<h2 align="center">Desafios e aprendizados ao longo do caminho 🤯</h2>
-
-   <p>
-      A semana Next Level Week, como muitos sabem, não é de brincadeira, ela requer prática, intensidade e principalmente, muito foco!<br> 
-      Felizmente, estou conseguindo ir bem na mesma, e quero fazer uma semana ainda melhor que a passada, pois afinal, como o mesmo nome diz, temos que sempre estar buscando um próximo nível e ser melhor a cada dia!<br>
-      Hoje, dia 16, foi o último dia de aula da Next Level Week, e essa experiência foi SENSACIONAL! A Rocketseat está de parabéns, e que ela continue sempre com essas grandes semanas, que me deram ainda mais foco, objetivo, conexões novas com pessoas, e eu só tenho a agradecer por esse trabalho sensacional!<br>
-      Foi uma experiência incrível, e que quero viver mais e mais vezes! 🚀
-   </p>
-
----
-
 <h2 align="center">Como usar 🤔</h2>
 
 ```
@@ -66,8 +55,7 @@
   $ cd Awax
 
 - Open your browser in:
-  http://localhost:5500/
-  
+  http://localhost:5500/  
 ```
 
 ---
@@ -92,7 +80,7 @@ $ git push origin my-feature
 <h2 align="center">Licença 📝</h2>
 
 <p align="center">
-   Este repositório está sob licença MIT. Você pode ver o arquivo <a href="https://github.com/felipecastrosales/Happy/blob/master/LICENSE"> LICENSE </a> para mais detalhes. 😉
+   Este repositório está sob licença MIT. Você pode ver o arquivo <a href="https://github.com/michaelsribeiro/projetoAwax-website/blob/main/LICENSE.md"> LICENSE </a> para mais detalhes. 😉
 </p>
 
 ---
