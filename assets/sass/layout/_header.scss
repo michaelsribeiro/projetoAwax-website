@@ -146,42 +146,26 @@ header {
                 a {
                     transition: .3s linear;
                     padding-bottom: 30px;
-                    border-bottom: 2px solid #000;
-                    
-                    @include breakpoint(zero-to-small){
-                        border: none;                 
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        bottom: -10px;
+                        right: 0;
+                        width: 0%;
+                        height: 2px;
+                        background: $text-color-secondary;
+                        transition: all linear .2s;
                     }
 
-                    @include breakpoint(small-to-medium){
-                        border: none;                 
-                    }
-
-                    &.active {
+                    &:hover {                        
                         color: $text-color-secondary;
-                        border: none;
-
-                        @include breakpoint(medium-to-large) { 
-                            color: $text-color-secondary;
-                            border-bottom: 2px solid $text-color-secondary;
-                        }
-
-                        @include breakpoint(large-up) { 
-                            color: $text-color-secondary;
-                            border-bottom: 2px solid $text-color-secondary;
-                        }
                     }
-                    
-                    &:hover {
-                        color: $text-color-secondary;
-                        border-bottom: 2px solid $text-color-secondary;
 
-                        @include breakpoint(zero-to-small){
-                            border: none;                 
-                        }
-
-                        @include breakpoint(small-to-medium){
-                            border: none;                 
-                        }
+                    &.active::before,
+                    &:hover::before {
+                        left: 0;
+                        width: 100%;
                     }
                 }
             }        
