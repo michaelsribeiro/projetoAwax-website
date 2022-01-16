@@ -124,3 +124,19 @@ $(document).ready(function() {
         time: 1200
     });
 });
+
+function toTop(){
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+}
+
+function hideTopBtn() {
+    window.scrollY === 0 ? document.querySelector('.topbtn').style.display = 'none' : document.querySelector('.topbtn').style.display = 'block';
+}
+
+window.addEventListener('scroll', hideTopBtn);
+
+let offset = document.querySelector('#about').offsetTop;
+console.log(window.scrollY);

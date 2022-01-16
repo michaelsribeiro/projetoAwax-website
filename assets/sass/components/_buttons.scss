@@ -22,7 +22,20 @@
 }
 
 .topbtn {
-    width: 40px;
-    height: 40px;
+    display: none;
+    width: 50px;
+    height: 50px;
     background-color: $text-color-secondary;
+    border: none;
+    outline: none;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    border-radius: 50%;
+    z-index: z-index(modal);
+
+    i {
+        font-size: 30px;
+        color: $text-white;
+    }
 }
