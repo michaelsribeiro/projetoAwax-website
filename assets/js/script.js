@@ -135,8 +135,4 @@ function toTop(){
 function hideTopBtn() {
     window.scrollY === 0 ? document.querySelector('.topbtn').style.display = 'none' : document.querySelector('.topbtn').style.display = 'block';
 }
-
 window.addEventListener('scroll', hideTopBtn);
-
-let offset = document.querySelector('#about').offsetTop;
-console.log(window.scrollY);
