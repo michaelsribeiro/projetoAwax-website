@@ -77,14 +77,14 @@ header {
         }
     
         nav {
-            display: none;
             height: calc(100vh - 80px);
             width: calc(100% + 40px);
-            left: 0;
+            left: 110%;
             top: 80px;
             position: absolute;
             background-color: rgba(0,0,0,.9);
             z-index: z-index(modal);
+            transition: all ease .5s;
 
             @include breakpoint(medium-to-large){
                 display: block;
@@ -123,7 +123,7 @@ header {
             }
     
             li {
-                margin-bottom: 20px;
+                margin-bottom: 30px;
                 text-transform: uppercase;
                 font-size: 15px;
                 font-weight: 600;
