@@ -58,32 +58,9 @@
   http://localhost:5500/  
 ```
 
----
-
-<h2 align="center">Como contribuir 💪</h2>
-
-```
-- Fork o projeto
-
-- Crie uma nova branch com suas alterações:
-$ git checkout -b my-feature
-
-- Salve suas alterações e crie uma mensagem de confirmação dizendo o que você fez:
-$ git commit -m "feature: My new feature"
-
-- Envie suas alterações:
-$ git push origin my-feature
-```
-
----
 
 <h2 align="center">Licença 📝</h2>
 
 <p align="center">
    Este repositório está sob licença MIT. Você pode ver o arquivo <a href="https://github.com/michaelsribeiro/projetoAwax-website/blob/main/LICENSE.md"> LICENSE </a> para mais detalhes. 😉
 </p>
-
----
-
-> Este projeto foi desenvolvido com ❤️ por **[@Michael Ribeiro](https://www.instagram.com/michaell.ribeiro/)**, com o instrutor **[@Bonieky](https://www.instagram.com/bonieky/)**, da **[B7 Web](https://b7web.com.br/fullstack/)** 💜. <br>
-> Se isso te ajudou, dê uma ⭐, isso vai me ajudar também! 😉
