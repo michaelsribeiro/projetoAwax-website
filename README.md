@@ -12,7 +12,7 @@
    
    <p align="center">
       O projeto Awax, desenvolvido na Formação Fullstack Developer da <a href="https://b7web.com.br/fullstack/">B7 Web</a><br>
-      O projeto tem como inspiração uma o layoult de uma agência de publicidade e tem como intenção praticar as habilidades repassadas durante o curso. 😀<br>
+      O projeto tem como inspiração uma o layout de uma agência de publicidade e tem como intenção praticar as habilidades repassadas durante o curso. 😀<br>
    </p>
    
 - O que foi aprendido com este projeto:
