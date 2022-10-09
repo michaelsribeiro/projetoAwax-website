@@ -40,7 +40,6 @@
 - [HTML](https://html.com/)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [SASS/SCSS](https://www.sqlite.org/index.html)
-- [Handlebars](https://handlebarsjs.com/)
 - [JavaScript](https://www.javascript.com/)
 
 ---
